@@ -17,10 +17,7 @@ Version 2 improves error handling and user interface.
 For questions or comments, please __email [Karen](karenfreemansmith@gmail.com)__
 
 ### Known Issues
-* empty values (user just presses enter)
-* non-numeric values
-* negative numbers
-* count by number is larger than the count to numbers
+* none
 
 ### Technologies Used
 ###### HTML, CSS, Bootstrap, JavaScript, jQuery
