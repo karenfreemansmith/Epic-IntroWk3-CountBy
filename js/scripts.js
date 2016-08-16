@@ -9,8 +9,6 @@ $(document).ready(function() {
     }
 
     if(countTo<0 || countBy<0) {
-
-      //alert(countTo-countBy);
       if(countTo<0 && countBy<0){
         for(var index=countBy; index >= countTo; index += countBy){
           $("#result").append("<h3>" + index + "</h3>");
@@ -30,21 +28,5 @@ $(document).ready(function() {
         $("#result").append("<h3>" + index + "</h3>");
       }
     }
-
-
-
-
-
-
-    // manage negative numbers
-// if(countTo < 0 && countTo ){
-//     for(var index= countBy; index <= countTo; index -= countBy) {
-//       $("#result").append("<h3>" + index + "</h3>");
-//     }
-  //}else{
-
-  //manage countTo < countBy
-
-  //}
   });
 });
