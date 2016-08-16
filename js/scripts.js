@@ -1,7 +1,10 @@
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    alert($("#countBy").val());
-    alert($("#countTo").val());
+    var countBy = parseInt ($("#countBy").val());
+    var countTo = parseInt ($("#countTo").val());
+    for(var index= countBy; index <= countTo; index += countBy) {
+      $("#result").append("<h3>" + index + "</h3>");
+    }
   });
 });
