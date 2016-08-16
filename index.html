@@ -11,12 +11,25 @@
     <div class="container">
       <h1>Count By:</h1>
       <form>
-        Number to count to: <input id="countTo" type="number">
-        Number to count by: <input id="countBy" type="number">
-        <button type="submit">Count Now</button>
+        <div class="row">
+          <div class="form-group col-sm-6">
+            <label for="countTo">Number to count to:</label>
+            <input class="form-control" id="countTo" type="number">
+          </div>
+          <div class="form-group col-sm-6">
+            <label for="countBy">Number to count by:</label>
+            <input  class="form-control"id="countBy" type="number">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4 col-sm-offset-4">
+            <button type="submit" class="form-control btn btn-primary">Count Now</button>
+          </div>
+        </div>
       </form>
       <h2>Your result is:</h2>
       <div id = "result"></div>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
