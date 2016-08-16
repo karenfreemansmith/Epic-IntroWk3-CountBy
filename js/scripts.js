@@ -9,7 +9,19 @@ $(document).ready(function() {
     }
 
     if(countTo<0 || countBy<0) {
-      alert("We are not prepared to deal with your negativity");
+
+      //alert(countTo-countBy);
+      if(countTo<0 && countBy<0){
+        for(var index=countBy; index >= countTo; index += countBy){
+          $("#result").append("<h3>" + index + "</h3>");
+        }
+      } else if(countTo<0 && countBy>0){
+        for(var index=countBy; index >= countTo; index -= countBy){
+          $("#result").append("<h3>" + index + "</h3>");
+        }
+      } else {
+          alert("We are not prepared to deal with your negativity");
+      }
     } else {
       if(countTo < countBy) {
        alert("Sorry, you can't do that... you can't count to " + countTo + " by " + countBy + "!!");
